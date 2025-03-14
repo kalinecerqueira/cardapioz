@@ -216,7 +216,7 @@ public class Editar extends javax.swing.JFrame {
                         });                                             
         }    
         } catch (SQLException e) {
-           System.out.println("ocorreu um erro ao conectar");
+           System.out.println("Ocorreu um erro ao conectar!");
         }                               
     }//GEN-LAST:event_txtcodigoKeyReleased
 

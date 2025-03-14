@@ -158,10 +158,10 @@ Conexao con=new Conexao();
             excluirStmt.setString(1, txtnome.getText());    
             excluirStmt.execute();
             excluirStmt.close();
-            JOptionPane.showMessageDialog(null, "Produto Deletado com sucesso");
+            JOptionPane.showMessageDialog(null, "Produto deletado com sucesso!");
             con.desconectar();           
         } catch (SQLException e) {
-            System.err.println("Error ao Deletar Registro");
+            System.err.println("Erro ao deletar registro!");
             System.err.println(e.getMessage());
         }finally{
             con.desconectar();
@@ -191,7 +191,7 @@ Conexao con=new Conexao();
                         });                                             
         }    
         } catch (SQLException e) {
-           System.out.println("ocorreu um erro ao conectar");
+           System.out.println("Ocorreu um erro ao conectar!");
         }                               
 
     }//GEN-LAST:event_txtnomeKeyReleased

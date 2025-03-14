@@ -25,22 +25,22 @@ public class Conexao {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(ruta+servidor+db,user,pass);
             if(conn!=null){
-                System.out.println("Conexão ao BD... Pronto!!!");
+                System.out.println("Conectado ao banco de dados!");
             }else if(conn==null){
                 throw new SQLException();
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }catch(ClassNotFoundException e){
-            JOptionPane.showMessageDialog(null, "Seu produto ta errado. error: "+e.getMessage());
+            JOptionPane.showMessageDialog(null, "Seu produto está incorreto: "+e.getMessage());
         }catch(NullPointerException e){
-            JOptionPane.showMessageDialog(null, " Seu produto ta errado. error: "+e.getMessage());
+            JOptionPane.showMessageDialog(null, " Seu produto está incorreto: "+e.getMessage());
         }finally{
             return conn;
         }
     }
         public void desconectar(){
         conn = null;
-        System.out.println("Desconexion... listo!!!");
+        System.out.println("Desconectado.");
     }
 }

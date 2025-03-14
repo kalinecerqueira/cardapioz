@@ -165,11 +165,11 @@ cadastrarStmt.setString(3, txtdescricao.getText());
             cadastrarStmt.setString(4, txtpreco.getText());            
             cadastrarStmt.execute();
             cadastrarStmt.close();
-            JOptionPane.showMessageDialog(null, "produto cadastrado com sucesso...");
+            JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!");
             con.desconectar();
          
         } catch (SQLException e) {
-            System.err.println("Error ao cadastrar produto");
+            System.err.println("Erro ao cadastrar produto!");
             System.err.println(e.getMessage());
         }finally{
             con.desconectar();

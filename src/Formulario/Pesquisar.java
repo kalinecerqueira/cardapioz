@@ -206,7 +206,7 @@ public class Pesquisar extends javax.swing.JFrame {
                         });                                             
         }    
         } catch (SQLException e) {
-           System.out.println("ocorreu um erro ao conectar");
+           System.out.println("Ocorreu um erro ao conectar!");
         }                               
          
 
@@ -249,7 +249,7 @@ public void pesquisarProduto(){{
                         });                                             
         }    
         } catch (SQLException e) {
-           System.out.println("ocorreu um erro ao conectar");
+           System.out.println("Ocorreu um erro ao conectar!");
         }
          
     }                
